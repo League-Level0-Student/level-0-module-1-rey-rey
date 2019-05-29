@@ -10,16 +10,6 @@ int pizzaHeight = 250;
 int centerX = 200;
 int centerY = 300;
 
-void setup()
-{
-  size(400,600);
-
-  setupPizzaBox();
-  setupPizzaBase();
-  setupPizzaSauce();
-  setupPizzaCheese();
-  setupBoing();
-}
 
 void setupPizzaBox()
 {  
@@ -69,6 +59,18 @@ void mousePressed()
   
   sound.play();
   sound.rewind();
+}
+
+
+void setup()
+{
+  size(400,600);
+
+  setupPizzaBox();
+  setupPizzaBase();
+  setupPizzaSauce();
+  setupPizzaCheese();
+  setupBoing();
 }
 
 void draw()
